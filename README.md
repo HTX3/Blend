@@ -10,17 +10,16 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-[Description of your app]
-Dating App
+Dating App targeted towards college students
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Dating / Social Networking
+- **Mobile:** Primarily developed for mobile
+- **Story:** Matches user with others based on gender, preference, and campus
+- **Market:** College students
+- **Habit:** This app would be used regularly by users
+- **Scope:** We will begin with simple matching and chatting based on campus, and then maybe explore some more complex matching
 
 ## Product Spec
 
