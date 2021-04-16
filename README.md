@@ -42,33 +42,31 @@ Dating App
 
 * Register
    * User signs up for their account
-   * ...
 * Login
    * User logs into their account
-   * ...
 * Stream
    * User can scroll to find a match
    * User can match with someone who attends their school
 * Profile
-   * [list associated required story here]
-   * ...
+   * User can edit their name, profile picture and preferences
+* Match
+   * User can view their matches
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Stream Tab
+* Messages Tab
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login
+   * Register Screen
+   * Home Screen
+* Home Screen
+   * User Profile Screen
+   * Match Screen
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
