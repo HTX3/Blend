@@ -69,7 +69,7 @@ Dating App targeted towards college students
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+![Screenshot](Wireframe.png)
 
 ### [BONUS] Digital Wireframes & Mockups
 
