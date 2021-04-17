@@ -68,7 +68,6 @@ Dating App targeted towards college students
    * Match Screen
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 ![Screenshot](Wireframe.png)
 
 ### [BONUS] Digital Wireframes & Mockups
