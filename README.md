@@ -128,7 +128,7 @@ Wireframe created with [Figma](https://www.figma.com/)
 
 - Match Screen
 
- - (Read/GET) Query Match object
+  - (Read/GET) Query Match object
 
 - Message Screen
 
