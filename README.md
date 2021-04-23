@@ -126,11 +126,12 @@ Wireframe created with [Figma](https://www.figma.com/)
       - (Update/PUT) Update user location
 
 - Match Screen
+
       - (Read/GET) Query Match object
 
 - Message Screen
       - (Create/POST) Create a new message
-      
+
       - (Delete) Delete an existing message
 
 #### List of network requests by screen
