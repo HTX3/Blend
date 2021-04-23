@@ -140,7 +140,7 @@ Wireframe created with [Figma](https://www.figma.com/)
       
       - (Create/POST) Create a new Profile object
 
-      ``` 
+      ``` swift
       let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
@@ -155,13 +155,13 @@ Wireframe created with [Figma](https://www.figma.com/)
             else{
                 print("Error: \(error?.localizedDescription)")
             }
-            ```
+      ```
 
 - Login Screen
    
       - (Read/GET) Query user Profile object
-      
-      ````
+
+      ```swift
         let username = usernameField.text!
         let password = passwordField.text!
         
@@ -171,7 +171,7 @@ Wireframe created with [Figma](https://www.figma.com/)
             }else {
                 print("Error: \(error?.localizedDescription)")
             }
-      ````
+      ```
 
 
 
