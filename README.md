@@ -116,9 +116,13 @@ Wireframe created with [Figma](https://www.figma.com/)
 
 - Profile Screen
       - (Read/GET) Query logged in profile object
+
       - (Update/PUT) Update user profile image
+
       - (Update/PUT) Update user campus
+
       - (Update/PUT) Update user bio
+
       - (Update/PUT) Update user location
 
 - Match Screen
@@ -126,6 +130,7 @@ Wireframe created with [Figma](https://www.figma.com/)
 
 - Message Screen
       - (Create/POST) Create a new message
+      
       - (Delete) Delete an existing message
 
 #### List of network requests by screen
