@@ -114,6 +114,8 @@ Wireframe created with [Figma](https://www.figma.com/)
 
 ### Networking
 
+#### List of network requests by screen
+
 - Profile Screen
       - (Read/GET) Query logged in profile object
 
@@ -134,7 +136,7 @@ Wireframe created with [Figma](https://www.figma.com/)
 
       - (Delete) Delete an existing message
 
-#### List of network requests by screen
+
 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
