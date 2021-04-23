@@ -139,39 +139,37 @@ Wireframe created with [Figma](https://www.figma.com/)
 - Signup Screen
       
       - (Create/POST) Create a new Profile object
-
-      ``` swift
-      let user = PFUser()
-        user.username = usernameField.text
-        user.password = passwordField.text
-        user.bio = bio.text
-        user.campus = campus.text
-        user.age = age.text
-        
-        user.signUpInBackground { (success, error) in
-            if success {
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            }
-            else{
-                print("Error: \(error?.localizedDescription)")
-            }
-      ```
+         ```swift
+         let user = PFUser()
+           user.username = usernameField.text
+           user.password = passwordField.text
+           user.bio = bio.text
+           user.campus = campus.text
+           user.age = age.text
+           
+           user.signUpInBackground { (success, error) in
+               if success {
+                   self.performSegue(withIdentifier: "loginSegue", sender: nil)
+               }
+               else{
+                   print("Error: \(error?.localizedDescription)")
+               }
+         ```
 
 - Login Screen
    
       - (Read/GET) Query user Profile object
-
-      ```swift
-        let username = usernameField.text!
-        let password = passwordField.text!
-        
-        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in    
-            if user != nil{
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            }else {
-                print("Error: \(error?.localizedDescription)")
-            }
-      ```
+         ```swift
+           let username = usernameField.text!
+           let password = passwordField.text!
+           
+           PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in    
+               if user != nil{
+                   self.performSegue(withIdentifier: "loginSegue", sender: nil)
+               }else {
+                   print("Error: \(error?.localizedDescription)")
+               }
+         ```
 
 
 
