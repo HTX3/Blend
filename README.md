@@ -139,6 +139,7 @@ Wireframe created with [Figma](https://www.figma.com/)
 - Signup Screen
       
       - (Create/POST) Create a new Profile object
+      
          ```swift
          let user = PFUser()
            user.username = usernameField.text
@@ -159,6 +160,7 @@ Wireframe created with [Figma](https://www.figma.com/)
 - Login Screen
    
       - (Read/GET) Query user Profile object
+
          ```swift
            let username = usernameField.text!
            let password = passwordField.text!
