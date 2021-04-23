@@ -69,7 +69,7 @@ Dating App targeted towards college students
 
 ## Wireframes
 ![Screenshot](Wireframe.png)
-Wireframe created with [Figma](figma.com)
+Wireframe created with [Figma](https://www.figma.com/)
 
 ### [BONUS] Digital Wireframes & Mockups
 
@@ -112,10 +112,23 @@ Wireframe created with [Figma](figma.com)
 
 
 
-
-
-
 ### Networking
-- [Add list of network requests by screen ]
+
+- Profile Screen
+      - (Read/GET) Query logged in profile object
+      - (Update/PUT) Update user profile image
+      - (Update/PUT) Update user campus
+      - (Update/PUT) Update user bio
+      - (Update/PUT) Update user location
+
+- Match Screen
+      - (Read/GET) Query Match object
+
+- Message Screen
+      - (Create/POST) Create a new message
+      - (Delete) Delete an existing message
+
+#### List of network requests by screen
+
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
