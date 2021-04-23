@@ -69,6 +69,7 @@ Dating App targeted towards college students
 
 ## Wireframes
 ![Screenshot](Wireframe.png)
+Wireframe created with [Figma](figma.com)
 
 ### [BONUS] Digital Wireframes & Mockups
 
@@ -76,8 +77,44 @@ Dating App targeted towards college students
 
 ## Schema 
 [This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+
+#### Match Cell
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user (default field) |
+   | profilePicture| Pointer to User| image user |
+   | profileName   | Pointer to user| username string|
+   | age           | Pointer to user| age Number |
+   | potientialMatch|Bool     | if user is a match true, else false|
+
+#### Profile Cell
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user (default field) |
+   | profilePicture| Pointer to User| image user |
+   | profileName   | Pointer to user| username string|
+   | age           | Pointer to user| age Number |
+   | campus        | String   | university of user|
+   | location      | String   | location of user|
+   | bio           | String   | description of user|
+
+#### Message Cell
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user (default field) |
+   | profilePicture| Pointer to User| image user |
+   | profileName   | Pointer to user| username string|
+   | text          | String         | text message send by user|
+
+
+
+
+
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
