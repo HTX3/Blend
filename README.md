@@ -76,7 +76,7 @@ Wireframe created with [Figma](https://www.figma.com/)
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+<!-- [This section will be completed in Unit 9] -->
 
 ### Models
 
@@ -176,5 +176,5 @@ Wireframe created with [Figma](https://www.figma.com/)
 
 
 
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+<!-- - [Create basic snippets for each Parse network request]
+- [OPTIONAL: List endpoints if using existing API such as Yelp] -->
