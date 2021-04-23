@@ -117,6 +117,7 @@ Wireframe created with [Figma](https://www.figma.com/)
 #### List of network requests by screen
 
 - Profile Screen
+
       - (Read/GET) Query logged in profile object
 
       - (Update/PUT) Update user profile image
@@ -132,6 +133,7 @@ Wireframe created with [Figma](https://www.figma.com/)
       - (Read/GET) Query Match object
 
 - Message Screen
+
       - (Create/POST) Create a new message
 
       - (Delete) Delete an existing message
