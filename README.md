@@ -98,9 +98,9 @@ Wireframe created with [Figma](https://www.figma.com/)
    | profilePicture| Pointer to User| image user |
    | profileName   | Pointer to user| username string|
    | age           | Pointer to user| age Number |
-   | campus        | String   | university of user|
-   | location      | String   | location of user|
-   | bio           | String   | description of user|
+   | campus        | Pointer to user| university String|
+   | location      | Pointer to user| location String|
+   | bio           | Pointer to user| bio String|
 
 #### Message Cell
    | Property      | Type     | Description |
@@ -108,7 +108,7 @@ Wireframe created with [Figma](https://www.figma.com/)
    | objectId      | String   | unique id for the user (default field) |
    | profilePicture| Pointer to User| image user |
    | profileName   | Pointer to user| username string|
-   | text          | String         | text message send by user|
+   | textMessage   | String         | text message send by user|
 
 
 
@@ -117,8 +117,6 @@ Wireframe created with [Figma](https://www.figma.com/)
 #### List of network requests by screen
 
 - Profile Screen
-
-      - (Read/GET) Query logged in profile object
 
       - (Update/PUT) Update user profile image
 
@@ -137,6 +135,44 @@ Wireframe created with [Figma](https://www.figma.com/)
       - (Create/POST) Create a new message
 
       - (Delete) Delete an existing message
+
+- Signup Screen
+      
+      - (Create/POST) Create a new Profile object
+
+      ``` 
+      let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+        user.bio = bio.text
+        user.campus = campus.text
+        user.age = age.text
+        
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+            else{
+                print("Error: \(error?.localizedDescription)")
+            }
+            ```
+
+- Login Screen
+   
+      - (Read/GET) Query user Profile object
+      
+      ````
+        let username = usernameField.text!
+        let password = passwordField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in    
+            if user != nil{
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }else {
+                print("Error: \(error?.localizedDescription)")
+            }
+      ````
+
 
 
 
