@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="sh2-p6-Xa2">
             <objects>
-                <viewController title="Login View Controller" modalPresentationStyle="fullScreen" id="JJh-Py-uZ3" customClass="LoginViewController" customModule="Date" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login View Controller" modalPresentationStyle="fullScreen" id="JJh-Py-uZ3" customClass="LoginViewController" customModule="Blend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qAO-WM-z6f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +74,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="onSignIn:" destination="JJh-Py-uZ3" eventType="touchUpInside" id="Gy1-Xr-hsU"/>
+                                    <action selector="onSignIn:" destination="JJh-Py-uZ3" eventType="touchUpInside" id="Vuk-jx-7LN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfQ-Mi-zSe">
@@ -98,7 +98,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="onCreateAccount:" destination="JJh-Py-uZ3" eventType="touchUpInside" id="s6c-WK-Obe"/>
+                                    <action selector="onCreateAccount:" destination="JJh-Py-uZ3" eventType="touchUpInside" id="cUY-Df-eFP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -135,22 +135,22 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="createAccountButton" destination="nSj-uI-00i" id="Jac-3u-d19"/>
-                        <outlet property="passwordField" destination="Xw8-AU-JMa" id="uPI-eP-qes"/>
-                        <outlet property="signInButton" destination="P7u-aD-gz9" id="FEr-z3-cc6"/>
-                        <outlet property="usernameField" destination="qoh-Us-CJ9" id="SQN-PV-5fX"/>
+                        <outlet property="createAccountButton" destination="nSj-uI-00i" id="sdK-al-4HX"/>
+                        <outlet property="passwordField" destination="Xw8-AU-JMa" id="WG0-A8-Ajf"/>
+                        <outlet property="signInButton" destination="P7u-aD-gz9" id="rvh-iq-x06"/>
+                        <outlet property="usernameField" destination="qoh-Us-CJ9" id="AiF-gC-d7T"/>
                         <segue destination="RuS-1e-9vq" kind="presentation" identifier="loginSegue" id="Lfw-fT-cxG"/>
                         <segue destination="SEv-Wy-ZYS" kind="presentation" identifier="createAccountSegue" id="zTK-58-l2i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bZ-wd-Gwf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-426.08695652173918" y="458.70535714285711"/>
+            <point key="canvasLocation" x="-103" y="-136"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Kmu-QK-RZ1">
             <objects>
-                <viewController title="Sign Up View Controller" id="GB5-dt-eYd" customClass="SignUpViewController" customModule="Date" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sign Up View Controller" id="GB5-dt-eYd" customClass="SignUpViewController" customModule="Blend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mSk-qd-OS8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,7 +233,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="onSignUp:" destination="GB5-dt-eYd" eventType="touchUpInside" id="DFL-v5-IIK"/>
+                                    <action selector="onSignUp:" destination="GB5-dt-eYd" eventType="touchUpInside" id="osE-It-zCf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -274,20 +274,21 @@
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="G4e-zh-pTo">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="onCancel:" destination="GB5-dt-eYd" id="TU1-Iz-Dcb"/>
+                                <action selector="onCancel:" destination="GB5-dt-eYd" id="Ed0-Sm-hX1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="emailField" destination="LhM-Xk-Uox" id="dRR-1N-8SH"/>
-                        <outlet property="passwordField" destination="scl-g6-QUg" id="ofy-F3-RAY"/>
-                        <outlet property="signUpButton" destination="pV6-lg-l8b" id="CMt-Bf-h0s"/>
-                        <outlet property="usernameField" destination="PSv-QB-dTa" id="xtL-Zc-cFQ"/>
+                        <outlet property="emailField" destination="LhM-Xk-Uox" id="8eN-zM-AmT"/>
+                        <outlet property="passwordField" destination="scl-g6-QUg" id="1pc-y9-Bh8"/>
+                        <outlet property="signUpButton" destination="pV6-lg-l8b" id="nOe-mB-Fp3"/>
+                        <outlet property="usernameField" destination="PSv-QB-dTa" id="7r1-GS-HnE"/>
+                        <segue destination="RuS-1e-9vq" kind="presentation" identifier="completeSignUpSegue" id="UtX-9m-I5e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oue-Ld-YMK" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1708.6956521739132" y="87.723214285714278"/>
+            <point key="canvasLocation" x="2364" y="-137"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="OWA-3h-Dl6">
@@ -316,7 +317,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTn-GI-TOu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688" y="867"/>
+            <point key="canvasLocation" x="1216" y="970"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7ej-dX-Ek4">
@@ -336,7 +337,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kX-2Z-EeX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="799" y="867"/>
+            <point key="canvasLocation" x="290" y="970"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dix-ox-M1S">
@@ -358,9 +359,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDw-4r-78t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798.55072463768124" y="87.723214285714278"/>
+            <point key="canvasLocation" x="1216" y="-137"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UtX-9m-I5e"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
