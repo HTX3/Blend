@@ -9,9 +9,9 @@ import UIKit
 
 class MatchCell: UITableViewCell {
 
-    @IBOutlet weak var matchPicture: UIImageView!
-    @IBOutlet weak var matchNameLabel: UILabel!
-    @IBOutlet weak var matchAgeLabel: UILabel!
+    @IBOutlet weak var profilePicture: UIImageView!
+    @IBOutlet weak var profileName: UILabel!
+    @IBOutlet weak var age: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

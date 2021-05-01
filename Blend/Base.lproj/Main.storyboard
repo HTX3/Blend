@@ -313,24 +313,24 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spu-WY-c2q">
                                             <rect key="frame" x="288" y="620" width="51" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w19-IM-5XX">
                                             <rect key="frame" x="64" y="620" width="194" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.80106323960000003" green="0.54982757569999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <outlet property="matchAgeLabel" destination="Spu-WY-c2q" id="YIw-Gs-4Dp"/>
-                                    <outlet property="matchNameLabel" destination="w19-IM-5XX" id="bLE-S4-D9U"/>
-                                    <outlet property="matchPicture" destination="rp9-nC-RH0" id="Ukj-if-dSV"/>
+                                    <outlet property="age" destination="Spu-WY-c2q" id="jYn-Fd-41q"/>
+                                    <outlet property="profileName" destination="w19-IM-5XX" id="zGG-Wj-t00"/>
+                                    <outlet property="profilePicture" destination="rp9-nC-RH0" id="aB6-Vd-ERb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
