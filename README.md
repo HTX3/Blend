@@ -26,11 +26,10 @@ Dating App targeted towards college students
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-
-[x] User can register for a new account
-[x] User can login
-* User can scroll to find a match
-* User can match with someone who attends their school
+- [x] User can register for a new account
+- [x] User can login
+- [ ] User can scroll to find a match
+- [ ] User can match with someone who attends their school
 
 
 **Optional Nice-to-have Stories**
