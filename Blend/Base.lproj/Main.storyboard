@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JJh-Py-uZ3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JJh-Py-uZ3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -293,19 +293,45 @@
         <!--Home View Controller-->
         <scene sceneID="OWA-3h-Dl6">
             <objects>
-                <tableViewController title="Home View Controller" id="Oun-KN-M5C" sceneMemberID="viewController">
+                <tableViewController title="Home View Controller" id="Oun-KN-M5C" customClass="HomeViewController" customModule="Blend" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fVy-cJ-Lwv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ofW-O9-xVw">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MatchCell" rowHeight="722" id="ofW-O9-xVw" customClass="MatchCell" customModule="Blend" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="722"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ofW-O9-xVw" id="26q-qb-mNT">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rp9-nC-RH0">
+                                            <rect key="frame" x="20" y="42" width="374" height="570"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spu-WY-c2q">
+                                            <rect key="frame" x="288" y="620" width="51" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w19-IM-5XX">
+                                            <rect key="frame" x="64" y="620" width="194" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.80106323960000003" green="0.54982757569999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <outlet property="age" destination="Spu-WY-c2q" id="jYn-Fd-41q"/>
+                                    <outlet property="profileName" destination="w19-IM-5XX" id="zGG-Wj-t00"/>
+                                    <outlet property="profilePicture" destination="rp9-nC-RH0" id="aB6-Vd-ERb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -313,11 +339,18 @@
                             <outlet property="delegate" destination="Oun-KN-M5C" id="J2a-Dq-paB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Home" id="GJo-CR-4o2"/>
+                    <navigationItem key="navigationItem" title="Home" id="GJo-CR-4o2">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="laU-FC-0nA"/>
+                        <barButtonItem key="rightBarButtonItem" title="Messages" id="Pne-7V-YFW"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="onMessagesButton" destination="Pne-7V-YFW" id="cse-fo-lb6"/>
+                        <outlet property="onProfileButton" destination="laU-FC-0nA" id="hI1-Pb-MbN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTn-GI-TOu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1216" y="970"/>
+            <point key="canvasLocation" x="1214.4927536231885" y="969.64285714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7ej-dX-Ek4">

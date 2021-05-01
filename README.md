@@ -1,6 +1,4 @@
 # Blend
-Original App Design Project - README Template
-===
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -26,11 +24,13 @@ Dating App targeted towards college students
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
+- [x] User can register for a new account
+- [x] User can login
+- [ ] User can scroll to find a match
+- [ ] User can match with someone who attends their school
 
-* User can register for a new account
-* User can login
-* User can scroll to find a match
-* User can match with someone who attends their school
+<img src='http://g.recordit.co/vcev7BrzPm.gif'/>
+<img src='http://g.recordit.co/DbFwImFSPY.gif'/>
 
 
 **Optional Nice-to-have Stories**
