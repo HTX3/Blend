@@ -30,6 +30,7 @@ Dating App targeted towards college students
 - [ ] User can match with someone who attends their school
 
 <img src='http://g.recordit.co/vcev7BrzPm.gif'/>
+<img src='http://g.recordit.co/DbFwImFSPY.gif'/>
 
 
 **Optional Nice-to-have Stories**
