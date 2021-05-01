@@ -12,6 +12,7 @@
 		617EDF5E263D030200586B28 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617EDF5D263D030200586B28 /* HomeViewController.swift */; };
 		617EDF6C263D04DF00586B28 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617EDF6B263D04DF00586B28 /* MatchCell.swift */; };
 		8215DBA114563B8E8E9149D3 /* Pods_BlendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE49D2F1CE74B0FB7834545 /* Pods_BlendTests.framework */; };
+		B08CA756263DB2010067724B /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08CA755263DB2010067724B /* MoreInfoViewController.swift */; };
 		B0982EDA26347012007E4B39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0982ED926347012007E4B39 /* AppDelegate.swift */; };
 		B0982EDC26347012007E4B39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0982EDB26347012007E4B39 /* SceneDelegate.swift */; };
 		B0982EE126347012007E4B39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0982EDF26347012007E4B39 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		8EE49D2F1CE74B0FB7834545 /* Pods_BlendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0ED8186E5789F44C9F1D5E6 /* Pods-BlendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlendTests.release.xcconfig"; path = "Target Support Files/Pods-BlendTests/Pods-BlendTests.release.xcconfig"; sourceTree = "<group>"; };
 		A91AD9BB0269C4F72B5525E1 /* Pods-Blend-BlendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blend-BlendUITests.release.xcconfig"; path = "Target Support Files/Pods-Blend-BlendUITests/Pods-Blend-BlendUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B08CA755263DB2010067724B /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		B0982ED626347012007E4B39 /* Blend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0982ED926347012007E4B39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0982EDB26347012007E4B39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				B0BAC4F8263B702200D97ECD /* SignUpViewController.swift */,
 				617EDF5D263D030200586B28 /* HomeViewController.swift */,
 				617EDF6B263D04DF00586B28 /* MatchCell.swift */,
+				B08CA755263DB2010067724B /* MoreInfoViewController.swift */,
 			);
 			path = Blend;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				617EDF5E263D030200586B28 /* HomeViewController.swift in Sources */,
 				B0BAC4F4263B6E7200D97ECD /* LoginViewController.swift in Sources */,
 				B0982EDA26347012007E4B39 /* AppDelegate.swift in Sources */,
+				B08CA756263DB2010067724B /* MoreInfoViewController.swift in Sources */,
 				617EDF6C263D04DF00586B28 /* MatchCell.swift in Sources */,
 				B0BAC4F9263B702200D97ECD /* SignUpViewController.swift in Sources */,
 				B0982EDC26347012007E4B39 /* SceneDelegate.swift in Sources */,

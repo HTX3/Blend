@@ -26,26 +26,7 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func onSignUp(_ sender: Any) {
-        let user = PFUser()
-        user.email = emailField.text
-        user.username = usernameField.text
-        user.password = passwordField.text
-        
-        user.signUpInBackground { (success, error) in
-            if success{
-                let alert = UIAlertController(title: "Account Created", message: "Please check your email for a verification link.", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-                //go back login page
-                self.dismiss(animated: true, completion: nil)
-            }else{
-                print("Error: \(error?.localizedDescription)")
-                let alert = UIAlertController(title: "Could Not Create Account", message: "An error occurred when attempting to create your account.", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                
-                self.present(alert, animated: true, completion: nil)
-            }
-        }
+        self.performSegue(withIdentifier: "finishSignUpSegue", sender: nil)
     }
     
     @IBAction func onCancel(_ sender: Any) {
@@ -53,14 +34,16 @@ class SignUpViewController: UIViewController {
     }
     
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let moreInfoViewController = segue.destination as! MoreInfoViewController
+        
+        moreInfoViewController.username = usernameField.text
+        moreInfoViewController.password = passwordField.text
     }
-    */
+    
 
 }
