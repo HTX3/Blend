@@ -1,5 +1,4 @@
 # Blend
-Original App Design Project - README Template
 ===
 
 ## Table of Contents
