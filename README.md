@@ -25,6 +25,7 @@ Dating App targeted towards college students
 
 **Required Must-have Stories**
 - [x] User can register for a new account
+<img src='http://g.recordit.co/vcev7BrzPm.gif'/>
 - [x] User can login
 - [ ] User can scroll to find a match
 - [ ] User can match with someone who attends their school
