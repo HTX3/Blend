@@ -36,8 +36,8 @@ class SignUpViewController: UIViewController {
                 let alert = UIAlertController(title: "Account Created", message: "Please check your email for a verification link.", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
-                //go to next step
-                self.performSegue(withIdentifier: "completeSignUpSegue", sender: nil)
+                //go back login page
+                self.dismiss(animated: true, completion: nil)
             }else{
                 print("Error: \(error?.localizedDescription)")
                 let alert = UIAlertController(title: "Could Not Create Account", message: "An error occurred when attempting to create your account.", preferredStyle: .alert)
