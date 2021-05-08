@@ -14,6 +14,13 @@ class MoreInfoViewController: UIViewController  {
     var email: String!
     var username: String!
     var password: String!
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var ageField: UITextField!
+    @IBOutlet weak var schoolField: UITextField!
+    @IBOutlet weak var bioField: UITextField!
+    @IBOutlet weak var completeSignUpButton: UIButton!
+    
+    
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +35,9 @@ class MoreInfoViewController: UIViewController  {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onCompleteSignUp(_ sender: Any) {
+    }
+    
     
     
 
