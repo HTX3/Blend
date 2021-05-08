@@ -8,7 +8,9 @@
 import UIKit
 import Parse
 
-class MoreInfoViewController: UIViewController  {
+class MoreInfoViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+   
+    
     
     
     var email: String!
@@ -19,6 +21,11 @@ class MoreInfoViewController: UIViewController  {
     @IBOutlet weak var schoolField: UITextField!
     @IBOutlet weak var bioField: UITextField!
     @IBOutlet weak var completeSignUpButton: UIButton!
+    @IBOutlet weak var genderPicker: UIPickerView!
+    @IBOutlet weak var preferencePicker: UIPickerView!
+    
+    var genderOptions = [String]()
+    var preferenceOptions = [String]()
     
     
   
@@ -27,6 +34,8 @@ class MoreInfoViewController: UIViewController  {
         completeSignUpButton.layer.cornerRadius = 5
         completeSignUpButton.layer.borderWidth = 1
         
+        genderOptions = ["Male", "Female", "Non-Binary"]
+        preferenceOptions = ["Men", "Women", "Men & Women", "All"]
         // Connect data:
        
         
@@ -38,6 +47,33 @@ class MoreInfoViewController: UIViewController  {
     }
     
     @IBAction func onCompleteSignUp(_ sender: Any) {
+        let user = PFUser()
+        user.email = email
+        user.username = username
+        user.password = password
+        
+        
+        
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if pickerView.tag == 1{
+            return genderOptions.count
+        }else{
+            return preferenceOptions.count
+        }
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        if pickerView.tag == 1 {
+            return "\(genderOptions[row])"
+        } else {
+            return "\(preferenceOptions[row])"
+        }
     }
     
     
