@@ -24,6 +24,8 @@ class MoreInfoViewController: UIViewController  {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        completeSignUpButton.layer.cornerRadius = 5
+        completeSignUpButton.layer.borderWidth = 1
         
         // Connect data:
        
