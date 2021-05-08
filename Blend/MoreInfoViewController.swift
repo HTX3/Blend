@@ -15,16 +15,6 @@ class MoreInfoViewController: UIViewController  {
     var username: String!
     var password: String!
   
-    @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var ageField: UITextField!
-    @IBOutlet weak var schoolField: UITextField!
-    @IBOutlet weak var bioField: UITextField!
-    
-    
-    
-    var pickerData: [String] = [String]()
-    var colleges = [PFObject]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
