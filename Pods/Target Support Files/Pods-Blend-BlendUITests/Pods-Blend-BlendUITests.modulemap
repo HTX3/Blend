@@ -1,0 +1,6 @@
+framework module Pods_Blend_BlendUITests {
+  umbrella header "Pods-Blend-BlendUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

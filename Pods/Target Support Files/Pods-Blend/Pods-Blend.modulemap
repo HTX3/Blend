@@ -1,0 +1,6 @@
+framework module Pods_Blend {
+  umbrella header "Pods-Blend-umbrella.h"
+
+  export *
+  module * { export * }
+}

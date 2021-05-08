@@ -22,6 +22,7 @@
 		B0982EFC26347018007E4B39 /* BlendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0982EFB26347018007E4B39 /* BlendUITests.swift */; };
 		B0BAC4F4263B6E7200D97ECD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAC4F3263B6E7200D97ECD /* LoginViewController.swift */; };
 		B0BAC4F9263B702200D97ECD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAC4F8263B702200D97ECD /* SignUpViewController.swift */; };
+		F1BCA42C2646267B006E91F4 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BCA42B2646267B006E91F4 /* ProfileEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		B0982EFD26347018007E4B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0BAC4F3263B6E7200D97ECD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B0BAC4F8263B702200D97ECD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F1BCA42B2646267B006E91F4 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				617EDF5D263D030200586B28 /* HomeViewController.swift */,
 				617EDF6B263D04DF00586B28 /* MatchCell.swift */,
 				B08CA755263DB2010067724B /* MoreInfoViewController.swift */,
+				F1BCA42B2646267B006E91F4 /* ProfileEditViewController.swift */,
 			);
 			path = Blend;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1BCA42C2646267B006E91F4 /* ProfileEditViewController.swift in Sources */,
 				617EDF5E263D030200586B28 /* HomeViewController.swift in Sources */,
 				B0BAC4F4263B6E7200D97ECD /* LoginViewController.swift in Sources */,
 				B0982EDA26347012007E4B39 /* AppDelegate.swift in Sources */,
