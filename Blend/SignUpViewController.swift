@@ -43,6 +43,7 @@ class SignUpViewController: UIViewController {
         
         moreInfoViewController.username = usernameField.text
         moreInfoViewController.password = passwordField.text
+        moreInfoViewController.email = emailField.text
     }
     
 
