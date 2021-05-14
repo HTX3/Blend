@@ -35,8 +35,11 @@ class HomeViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         //find matches
+        let user = PFUser.current()
+        let email = user?.email
         let query = PFQuery(className: "Matches")
-        query.includeKeys(["name", "age", "bio", "profilePhotos"])
+        query.includeKeys(["name", "age", "bio", "profilePhotos","matchedUserEmail"])
+        query.whereKey("matchedUserEmail", equalTo: email!)
         query.limit = 20
         
         query.findObjectsInBackground(){(matches, error) in
