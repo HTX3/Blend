@@ -9,6 +9,8 @@ import UIKit
 
 class FeedViewController: UITableViewController {
 
+    @IBOutlet weak var onProfileButton: UIBarButtonItem!
+    @IBOutlet weak var onMessageButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 

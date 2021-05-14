@@ -9,6 +9,9 @@ import UIKit
 
 class FeedCell: UITableViewCell {
 
+    @IBOutlet weak var age: UILabel!
+    @IBOutlet weak var profilePicture: UIImageView!
+    @IBOutlet weak var profileName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -775,6 +775,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="separatorColor" red="0.80106323960000003" green="0.54982757569999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexBackgroundColor" red="0.80106323960000003" green="0.54982757569999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" rowHeight="684" id="GWm-p6-Ss5" customClass="FeedCell" customModule="Blend" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="684"/>
@@ -805,9 +807,9 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.80106323960000003" green="0.54982757569999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <outlet property="age" destination="ZKM-Cx-C33" id="oor-px-VUk"/>
-                                    <outlet property="profileName" destination="VPW-Yk-Oxc" id="HPQ-Op-kPl"/>
-                                    <outlet property="profilePicture" destination="Fhn-Cx-aaK" id="Gws-j0-GVZ"/>
+                                    <outlet property="age" destination="ZKM-Cx-C33" id="exC-Ea-oNQ"/>
+                                    <outlet property="profileName" destination="VPW-Yk-Oxc" id="H5M-pD-9Mw"/>
+                                    <outlet property="profilePicture" destination="Fhn-Cx-aaK" id="qfe-Mu-N3H"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -817,12 +819,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Feed" id="RL8-zU-YYj">
-                        <barButtonItem key="leftBarButtonItem" title="Profile" image="icons8-male-user-32" id="acv-l4-1dt"/>
+                        <barButtonItem key="leftBarButtonItem" title="Profile" image="icons8-male-user-32" id="C1U-R4-7up"/>
                         <barButtonItem key="rightBarButtonItem" title="Messages" image="icons8-messaging-32" id="o5N-1P-Shj"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="onMessageButton" destination="o5N-1P-Shj" id="Fu0-2t-rW7"/>
                         <outlet property="onMessagesButton" destination="o5N-1P-Shj" id="svX-9K-Pap"/>
-                        <outlet property="onProfileButton" destination="acv-l4-1dt" id="iPP-m3-9Rx"/>
+                        <outlet property="onProfileButton" destination="C1U-R4-7up" id="L3c-0d-AqD"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhZ-5n-5EQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
