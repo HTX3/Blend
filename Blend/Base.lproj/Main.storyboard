@@ -290,6 +290,38 @@
             </objects>
             <point key="canvasLocation" x="2364" y="-137"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R3N-MF-bbf">
+            <objects>
+                <navigationController id="8U2-Lt-ZoC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QFo-bS-NZB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="E94-6Z-c8T" kind="relationship" relationship="rootViewController" id="aNz-k1-VoU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E08-ne-dxn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2362" y="593"/>
+        </scene>
+        <!--Message View Controller-->
+        <scene sceneID="rfo-8E-5Ph">
+            <objects>
+                <viewController id="E94-6Z-c8T" customClass="MessageViewController" customModule="Blend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="siQ-TA-T6p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="shX-m3-OAp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2R9-yR-9wM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dzn-7V-HhO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3448" y="593"/>
+        </scene>
         <!--Sign Up-->
         <scene sceneID="5Nf-pm-yDL">
             <objects>
@@ -486,7 +518,11 @@
                                 <segue destination="wQu-81-WUl" kind="presentation" identifier="editProfileSegue" id="j1N-9C-Fom"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Messages" image="icons8-messaging-32" id="Pne-7V-YFW"/>
+                        <barButtonItem key="rightBarButtonItem" title="Messages" image="icons8-messaging-32" id="Pne-7V-YFW">
+                            <connections>
+                                <segue destination="8U2-Lt-ZoC" kind="presentation" id="blp-Ci-QNj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="onMessagesButton" destination="Pne-7V-YFW" id="cse-fo-lb6"/>
@@ -495,7 +531,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTn-GI-TOu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1034.7826086956522" y="592.63392857142856"/>
+            <point key="canvasLocation" x="1216" y="593"/>
         </scene>
         <!--Edit Profile-->
         <scene sceneID="ttw-wN-Zcf">
@@ -857,7 +893,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ihh-cA-d7q"/>
+        <segue reference="SKD-FK-UbP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icons8-male-user-32" width="32" height="32"/>

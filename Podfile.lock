@@ -1,36 +1,51 @@
 PODS:
-  - Alamofire (5.4.1)
-  - AlamofireImage (4.1.0):
-    - Alamofire (~> 5.1)
+  - Alamofire (5.4.3)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
+  - Bolts-Swift (1.5.0)
   - Bolts/Tasks (1.9.1)
-  - MessageInputBar (0.4.1):
-    - MessageInputBar/Core (= 0.4.1)
-  - MessageInputBar/Core (0.4.1)
-  - Parse (1.19.1):
-    - Parse/Core (= 1.19.1)
-  - Parse/Core (1.19.1):
+  - JSQMessagesViewController (7.3.5):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - Parse (1.19.2):
+    - Parse/Core (= 1.19.2)
+  - Parse/Core (1.19.2):
     - Bolts/Tasks (= 1.9.1)
+  - ParseLiveQuery (2.8.0):
+    - Bolts-Swift (~> 1.5.0)
+    - Parse (~> 1.19.0)
+    - Starscream (~> 4.0.4)
+  - Starscream (4.0.4)
 
 DEPENDENCIES:
   - AlamofireImage
-  - MessageInputBar
+  - JSQMessagesViewController
   - Parse
+  - ParseLiveQuery
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireImage
     - Bolts
-    - MessageInputBar
+    - Bolts-Swift
+    - JSQMessagesViewController
+    - JSQSystemSoundPlayer
     - Parse
+    - ParseLiveQuery
+    - Starscream
 
 SPEC CHECKSUMS:
-  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
-  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
-  MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
-  Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
+  Bolts-Swift: afbbaf8c8186e7f769be4afa656949c14087ba44
+  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Parse: 081fb8755c3000fd11df817eec235def233d0af3
+  ParseLiveQuery: 366b5876aa20074ea7fea52446376e102447b5df
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
 
-PODFILE CHECKSUM: 61c603ee637543e71f42a8cd238d9b3135683ee0
+PODFILE CHECKSUM: 6026cb93678287975fba601ab59f7f9c318fffc7
 
 COCOAPODS: 1.10.1

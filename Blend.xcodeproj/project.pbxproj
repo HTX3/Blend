@@ -26,6 +26,8 @@
 		B0BAC4F4263B6E7200D97ECD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAC4F3263B6E7200D97ECD /* LoginViewController.swift */; };
 		B0BAC4F9263B702200D97ECD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAC4F8263B702200D97ECD /* SignUpViewController.swift */; };
 		F1BCA42C2646267B006E91F4 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BCA42B2646267B006E91F4 /* ProfileEditViewController.swift */; };
+		FF5EA873264EF41400EADC06 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EA872264EF41400EADC06 /* MessageViewController.swift */; };
+		FF5EA876264EF8A100EADC06 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EA875264EF8A100EADC06 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,9 @@
 		B0BAC4F3263B6E7200D97ECD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B0BAC4F8263B702200D97ECD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F1BCA42B2646267B006E91F4 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		FF5EA872264EF41400EADC06 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		FF5EA874264EF67600EADC06 /* Bridger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridger.h; sourceTree = "<group>"; };
+		FF5EA875264EF8A100EADC06 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +137,7 @@
 		B0982ED826347012007E4B39 /* Blend */ = {
 			isa = PBXGroup;
 			children = (
+				FF5EA86D264E139000EADC06 /* Messages */,
 				B0982ED926347012007E4B39 /* AppDelegate.swift */,
 				B0982EDB26347012007E4B39 /* SceneDelegate.swift */,
 				B0982EDF26347012007E4B39 /* Main.storyboard */,
@@ -190,6 +196,16 @@
 				8EE49D2F1CE74B0FB7834545 /* Pods_BlendTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF5EA86D264E139000EADC06 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				FF5EA874264EF67600EADC06 /* Bridger.h */,
+				FF5EA875264EF8A100EADC06 /* Message.swift */,
+				FF5EA872264EF41400EADC06 /* MessageViewController.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +449,7 @@
 			files = (
 				F1BCA42C2646267B006E91F4 /* ProfileEditViewController.swift in Sources */,
 				615046042646E7EB005CE82C /* FeedCell.swift in Sources */,
+				FF5EA873264EF41400EADC06 /* MessageViewController.swift in Sources */,
 				615046022646E79B005CE82C /* FeedViewController.swift in Sources */,
 				617EDF5E263D030200586B28 /* HomeViewController.swift in Sources */,
 				B0BAC4F4263B6E7200D97ECD /* LoginViewController.swift in Sources */,
@@ -440,6 +457,7 @@
 				B08CA756263DB2010067724B /* MoreInfoViewController.swift in Sources */,
 				617EDF6C263D04DF00586B28 /* MatchCell.swift in Sources */,
 				B0BAC4F9263B702200D97ECD /* SignUpViewController.swift in Sources */,
+				FF5EA876264EF8A100EADC06 /* Message.swift in Sources */,
 				B0982EDC26347012007E4B39 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

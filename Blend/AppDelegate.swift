@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Message.registerSubclass()
         // Override point for customization after application launch.
         let parseConfig = ParseClientConfiguration{
                 $0.applicationId = "4HpTjFq07Z0senfSqdOQvmpZvDbExtkGr0ncluzQ"

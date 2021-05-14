@@ -8,7 +8,8 @@ target 'Blend' do
   # Pods for Blend
   pod 'AlamofireImage'
   pod 'Parse'
-  pod 'MessageInputBar'
+  pod 'JSQMessagesViewController'
+  pod 'ParseLiveQuery'
 
   target 'BlendTests' do
     inherit! :search_paths
