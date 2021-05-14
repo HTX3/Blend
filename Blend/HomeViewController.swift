@@ -6,18 +6,25 @@
 //
 
 import UIKit
+import Parse
 
 class HomeViewController: UITableViewController {
+   
+    
 
     //Storyboard items to segue to different screens
     @IBOutlet weak var onProfileButton: UIBarButtonItem!
     @IBOutlet weak var onMessagesButton: UIBarButtonItem!
     
-    
+    var matches = [PFObject]()
+    var selectedMatch: PFObject!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -25,17 +32,30 @@ class HomeViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        //find matches
+        let query = PFQuery(className: "Matches")
+        query.includeKeys(["name", "age", "bio", "profilePhotos"])
+        query.limit = 20
+        
+        query.findObjectsInBackground(){(matches, error) in
+            if matches != nil{
+                self.matches = matches!
+                self.tableView.reloadData()
+            }
+        }
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return matches.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
     /*

@@ -34,8 +34,8 @@ class MoreInfoViewController: UIViewController, UIPickerViewDataSource, UIPicker
         completeSignUpButton.layer.cornerRadius = 5
         completeSignUpButton.layer.borderWidth = 1
         
-        genderOptions = ["Male", "Female", "Non-Binary"]
-        preferenceOptions = ["Men", "Women", "Men & Women", "All"]
+        genderOptions = ["Man", "Woman", "Non-Binary"]
+        preferenceOptions = ["Man", "Woman", "Men & Women", "All"]
         // Connect data:
        
         
