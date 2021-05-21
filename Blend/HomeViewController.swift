@@ -7,17 +7,19 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
-class HomeViewController: UITableViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     
 
     //Storyboard items to segue to different screens
-    @IBOutlet weak var onProfileButton: UIBarButtonItem!
-    @IBOutlet weak var onMessagesButton: UIBarButtonItem!
+
+
     
     var matches = [PFObject]()
     var selectedMatch: PFObject!
+    @IBOutlet var tableView: UITableView!
     
     
     override func viewDidLoad() {
@@ -51,25 +53,34 @@ class HomeViewController: UITableViewController {
     }
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+    func numberOfSections(in tableView: UITableView) -> Int {
         return matches.count
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let match = matches[indexPath.section]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MatchCell") as! MatchCell
+        
+        cell.profileName.text = match["name"] as? String
+        cell.age.text = match["age"] as? String
+        let imageFile = match["profilePhoto"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        
+        cell.profilePicture.af.setImage(withURL: url)
+        
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,7 +98,7 @@ class HomeViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
