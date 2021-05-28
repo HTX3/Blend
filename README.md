@@ -27,11 +27,14 @@ Dating App targeted towards college students
 - [x] User can register for a new account
 - [x] User can login
 - [x] User can view matches on their home screen
-- [ ] User can scroll to find a match
-- [ ] User can match with someone who attends their school
+- [x] User can scroll to find a match
+- [x] User can match with someone who attends their school
+- [x] User can customize their account
 
 <img src='http://g.recordit.co/vcev7BrzPm.gif'/>
 <img src='http://g.recordit.co/DbFwImFSPY.gif'/>
+<img src='http://g.recordit.co/UneTGkT9nn.gif'/>
+<img src='http://g.recordit.co/mCK78IkCvL.gif'/>
 
 
 **Optional Nice-to-have Stories**
